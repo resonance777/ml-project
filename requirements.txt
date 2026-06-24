@@ -1,0 +1,27 @@
+# RAG & LLM for Ancient Empire History — Project 3
+# Tested with Python 3.14 on Windows. Versions are the ones used during
+# development; slightly different patch versions should also work.
+
+# --- PDF generation & text extraction ---
+reportlab==5.0.0
+pypdf==6.14.2
+
+# --- Embeddings (sentence-transformers/all-MiniLM-L6-v2) ---
+sentence-transformers==5.6.0
+torch==2.12.1            # pulled in by sentence-transformers
+transformers==5.12.1
+
+# --- Vector database / similarity search ---
+faiss-cpu==1.14.3
+
+# --- LLM (pick one provider; both SDKs are pure-Python and lightweight) ---
+google-genai==2.10.0     # Google Gemini (default provider)
+anthropic==0.112.0       # Anthropic Claude (optional alternative)
+
+# --- Web UI ---
+streamlit==1.58.0        # friendly browser interface (src/app.py)
+
+# --- Utilities ---
+numpy==2.5.0
+scikit-learn==1.9.0     # available for TF-IDF experiments / extensions
+python-dotenv==1.2.2    # loads ANTHROPIC_API_KEY from a .env file

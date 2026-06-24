@@ -1,0 +1,17 @@
+# Secrets — never commit real API keys
+.env
+.env.*
+!.env.example
+
+# Generated artifacts (re-creatable with the scripts)
+data/faiss.index
+data/chunks.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# HF / model cache
+.cache/
