@@ -81,6 +81,23 @@ def llm_provider() -> Optional[str]:
     return None
 
 
+def _short_llm_error(e: Exception) -> str:
+    """Condense an SDK exception into one human-readable line for the UI."""
+    msg = str(e)
+    if "RESOURCE_EXHAUSTED" in msg or "429" in msg:
+        return (
+            "API rate/quota limit reached (free-tier Gemini allows a limited "
+            "number of requests per day per model). Wait for the quota to "
+            "reset or set RAG_GEMINI_MODEL to a different model in .env.local."
+        )
+    if "API key not valid" in msg or "401" in msg or "PERMISSION_DENIED" in msg:
+        return "the API key was rejected — check the key in .env.local / sidebar."
+    if "UNAVAILABLE" in msg or "503" in msg:
+        return ("the model is temporarily overloaded (503) — try again in a "
+                "few seconds or switch RAG_GEMINI_MODEL in .env.local.")
+    return msg[:200]
+
+
 def active_model() -> str:
     """Human-readable id of the model that will actually be called."""
     provider = llm_provider()
@@ -269,6 +286,9 @@ class RAGPipeline:
         self._embedder: Optional[SentenceTransformer] = None
         self.index: Optional[faiss.Index] = None
         self.chunks: list[Chunk] = []
+        # Why the most recent LLM call returned nothing (None = it succeeded).
+        # Lets the UI say "quota exceeded", not a misleading "no key set".
+        self.last_llm_error: Optional[str] = None
 
     # -- embedding model (lazy load: it is the slowest import) -------------- #
     @property
@@ -387,6 +407,91 @@ class RAGPipeline:
         "provided context and cite the section titles used."
     )
 
+    # "Ask the Emperor" mode: same retrieval, same grounding rules, but the
+    # answer is voiced by a historical figure. Style changes; facts must not.
+    PERSONAS: dict[str, dict] = {
+        "historian": {
+            "title": "Modern historian (default)",
+            "emoji": "📖",
+            "system": None,  # falls back to SYSTEM_PROMPT
+        },
+        "marcus_aurelius": {
+            "title": "Marcus Aurelius — Stoic emperor",
+            "emoji": "🏛️",
+            "system": (
+                "You are Marcus Aurelius, Roman emperor and Stoic philosopher, "
+                "reflecting in the quiet of your campaign tent. Speak in the "
+                "first person: measured, meditative, addressing the reader as "
+                "a fellow student of life. You may refer to Rome as 'my "
+                "empire' and to Romans as 'my people'. STRICT RULES: every "
+                "factual claim must come from the provided context passages "
+                "only — never from outside knowledge; cite the section titles "
+                "in square brackets exactly like a scholar would, e.g. "
+                "[4. The Roman Military]; if the context does not contain the "
+                "answer, admit it with Stoic composure instead of inventing."
+            ),
+        },
+        "cicero": {
+            "title": "Cicero — orator of the Republic",
+            "emoji": "🗣️",
+            "system": (
+                "You are Marcus Tullius Cicero, Rome's greatest orator, "
+                "addressing the Senate. Speak in the first person with "
+                "rhetorical flair: vivid openings, rhetorical questions, an "
+                "occasional Latin flourish (translated in parentheses). "
+                "STRICT RULES: every factual claim must come from the provided "
+                "context passages only — never from outside knowledge; cite "
+                "the section titles in square brackets, e.g. "
+                "[2. From Republic to Empire]; if the context does not contain "
+                "the answer, concede the point gracefully instead of inventing."
+            ),
+        },
+        "legionary": {
+            "title": "Veteran legionary — soldier's view",
+            "emoji": "⚔️",
+            "system": (
+                "You are a grizzled veteran centurion of the Roman legions, "
+                "explaining things plainly over a cup of cheap wine. Blunt, "
+                "practical, a little wry; you respect facts the way you "
+                "respect orders. STRICT RULES: every factual claim must come "
+                "from the provided context passages only — never from outside "
+                "knowledge; cite the section titles in square brackets, e.g. "
+                "[4. The Roman Military]; if the context does not contain the "
+                "answer, say so straight instead of inventing."
+            ),
+        },
+        # Easter egg: unlocked by clicking the "67" on the Timeline tab.
+        "emperor67": {
+            "title": "Emperor Six-Seven — gen-alpha caesar",
+            "emoji": "🗿",
+            "system": (
+                "You are Emperor Six-Seven (Imperator Sixtus Septimus LXVII), "
+                "a generation-alpha Roman emperor with terminal brainrot. "
+                "You ALWAYS answer in English, in pure gen-alpha brainrot "
+                "slang, and you commit to it HARD: drop 'six seven' / '6 7' "
+                "constantly, plus 'skibidi', 'sigma', 'rizz' / 'rizzler', "
+                "'cringe', 'based', 'aura +1000', 'chupapi munyanyo', "
+                "'tun tun tun sahur', 'NPC behavior', 'no cap', 'fr fr', "
+                "'lowkey', 'cooked', 'massive W', 'it's giving', 'ohio'. "
+                "Short chaotic hype sentences, emoji like 🗿🔥💀🥶, occasional "
+                "ALL CAPS. BUT deep down you respect the imperial archives: "
+                "STRICT RULES: every factual claim must come from the "
+                "provided context passages only — never from outside "
+                "knowledge; cite the section titles in square brackets after "
+                "the facts they support, e.g. [4. The Roman Military]; if "
+                "the context does not contain the answer, say the scrolls "
+                "don't have it (mad cringe 💀) instead of inventing."
+            ),
+        },
+    }
+
+    def persona_system(self, persona: Optional[str]) -> str:
+        """Resolve the system prompt for a persona key (None -> default)."""
+        spec = self.PERSONAS.get(persona or "historian")
+        if spec and spec["system"]:
+            return spec["system"]
+        return self.SYSTEM_PROMPT
+
     def _call_llm(self, user_prompt: str, system: Optional[str] = None) -> Optional[str]:
         """
         Dispatch a chat request to whichever provider has an API key set.
@@ -395,27 +500,47 @@ class RAGPipeline:
         """
         provider = llm_provider()
         if provider is None:
+            self.last_llm_error = "no API key set"
             return None
-        try:
-            if provider == "gemini":
-                return self._call_gemini(user_prompt, system)
-            if provider == "anthropic":
-                return self._call_anthropic(user_prompt, system)
-        except Exception as e:  # network/auth/quota/etc.
-            print(f"[rag] LLM call failed ({e}); falling back to extractive answer.")
+        for attempt in (1, 2, 3):
+            try:
+                if provider == "gemini":
+                    result = self._call_gemini(user_prompt, system)
+                else:
+                    result = self._call_anthropic(user_prompt, system)
+                self.last_llm_error = None
+                return result
+            except Exception as e:  # network/auth/quota/etc.
+                self.last_llm_error = _short_llm_error(e)
+                transient = "503" in str(e) or "UNAVAILABLE" in str(e)
+                if transient and attempt < 3:
+                    print(f"[rag] LLM overloaded (attempt {attempt}); retrying …")
+                    time.sleep(2 * attempt)
+                    continue
+                print(f"[rag] LLM call failed ({e}); falling back to extractive answer.")
+                break
         return None
 
     def _call_gemini(self, user_prompt: str, system: Optional[str]) -> str:
-        """Call Google Gemini via the google-genai SDK."""
+        """Call Google Gemini (or Gemma) via the google-genai SDK."""
         from google import genai
         from google.genai import types
 
         api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
         client = genai.Client(api_key=api_key)
-        resp = client.models.generate_content(
-            model=GEMINI_MODEL,
-            contents=user_prompt,
-            config=types.GenerateContentConfig(
+
+        # Gemma models (huge free-tier quota) accept neither system_instruction
+        # nor thinking_config, so the system prompt is folded into the request.
+        if GEMINI_MODEL.startswith("gemma"):
+            contents = (
+                f"[Instructions]\n{system}\n\n{user_prompt}" if system else user_prompt
+            )
+            config = types.GenerateContentConfig(
+                max_output_tokens=2048, temperature=0.2
+            )
+        else:
+            contents = user_prompt
+            config = types.GenerateContentConfig(
                 system_instruction=system,
                 max_output_tokens=2048,
                 temperature=0.2,
@@ -424,7 +549,11 @@ class RAGPipeline:
                 # which can truncate or even empty out the visible answer.
                 # We disable thinking so the whole budget goes to the response.
                 thinking_config=types.ThinkingConfig(thinking_budget=0),
-            ),
+            )
+        resp = client.models.generate_content(
+            model=GEMINI_MODEL,
+            contents=contents,
+            config=config,
         )
         text = (resp.text or "").strip()
         if not text:
@@ -452,26 +581,35 @@ class RAGPipeline:
         msg = client.messages.create(**kwargs)
         return "".join(b.text for b in msg.content if b.type == "text").strip()
 
-    @staticmethod
-    def _extractive_answer(contexts: list[RetrievedChunk]) -> str:
+    def _extractive_answer(self, contexts: list[RetrievedChunk]) -> str:
         """Fallback: return the top retrieved passage(s) verbatim with citations."""
         if not contexts:
             return "No relevant passage was found in the document."
-        lines = ["(Extractive fallback — no LLM key set. Most relevant passages:)\n"]
+        reason = (self.last_llm_error or "no LLM key set").rstrip(".")
+        lines = [f"(Extractive fallback — {reason}. Most relevant passages:)\n"]
         for r in contexts[:2]:
             lines.append(f"[{r.chunk.section}] (score={r.score:.3f})\n{r.chunk.text}\n")
         return "\n".join(lines)
 
     def answer(
-        self, query: str, k: int = 4, use_llm: bool = True, min_score: float = 0.0
+        self,
+        query: str,
+        k: int = 4,
+        use_llm: bool = True,
+        min_score: float = 0.0,
+        persona: Optional[str] = None,
     ) -> Answer:
-        """Full RAG: retrieve context, then generate an answer."""
+        """Full RAG: retrieve context, then generate an answer.
+
+        `persona` selects a voice from PERSONAS ("Ask the Emperor" mode);
+        retrieval and grounding rules are identical for every persona.
+        """
         t0 = time.time()
         contexts = self.retrieve(query, k=k, min_score=min_score)
 
         if use_llm and contexts:
             prompt = self._build_prompt(query, contexts)
-            text = self._call_llm(prompt, system=self.SYSTEM_PROMPT)
+            text = self._call_llm(prompt, system=self.persona_system(persona))
             if text is not None:
                 return Answer(query, text, contexts, "rag", time.time() - t0, self.llm_model)
 
@@ -483,7 +621,8 @@ class RAGPipeline:
         t0 = time.time()
         text = self._call_llm(query)  # no system prompt, no injected context
         if text is None:
-            text = "(No LLM key set — baseline 'no-RAG' answer unavailable.)"
+            reason = self.last_llm_error or "no API key set"
+            text = f"(Baseline 'no-RAG' answer unavailable: {reason})"
         return Answer(query, text, [], "no-context", time.time() - t0, self.llm_model)
 
 

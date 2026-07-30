@@ -1,0 +1,10 @@
+[theme]
+base = "dark"
+primaryColor = "#c98500"            # antique gold — the single accent
+backgroundColor = "#141311"         # warm near-black page
+secondaryBackgroundColor = "#1a1a19" # cards / sidebar / chart surface
+textColor = "#f4f1e8"               # warm white ink
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false

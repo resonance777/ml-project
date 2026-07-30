@@ -1,0 +1,1866 @@
+{
+  "entities": [
+    {
+      "label": "Aeneas",
+      "type": "person",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Aeneid",
+      "type": "concept",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Agrippina the Younger",
+      "type": "person",
+      "sections": [
+        "14. Women, Family, and Education"
+      ]
+    },
+    {
+      "label": "Alaric",
+      "type": "person",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Antonine Constitution",
+      "type": "concept",
+      "sections": [
+        "6. Society and Daily Life"
+      ]
+    },
+    {
+      "label": "Arabia",
+      "type": "place",
+      "sections": [
+        "5. Economy and Trade"
+      ]
+    },
+    {
+      "label": "Augustus",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire",
+        "3. Imperial Government and Administration",
+        "7. Religion and Belief",
+        "12. Key Emperors and Dynasties",
+        "14. Women, Family, and Education"
+      ]
+    },
+    {
+      "label": "Baltic",
+      "type": "place",
+      "sections": [
+        "5. Economy and Trade"
+      ]
+    },
+    {
+      "label": "Battle of Actium",
+      "type": "battle",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Battle of Adrianople",
+      "type": "battle",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Britain",
+      "type": "place",
+      "sections": [
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Byzantine Empire",
+      "type": "institution",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Caligula",
+      "type": "person",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Caracalla",
+      "type": "person",
+      "sections": [
+        "6. Society and Daily Life"
+      ]
+    },
+    {
+      "label": "Carthage",
+      "type": "place",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "China",
+      "type": "place",
+      "sections": [
+        "5. Economy and Trade"
+      ]
+    },
+    {
+      "label": "Christian Church",
+      "type": "institution",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Christianity",
+      "type": "concept",
+      "sections": [
+        "7. Religion and Belief"
+      ]
+    },
+    {
+      "label": "Circus Maximus",
+      "type": "place",
+      "sections": [
+        "6. Society and Daily Life"
+      ]
+    },
+    {
+      "label": "Cleopatra",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Colosseum",
+      "type": "place",
+      "sections": [
+        "6. Society and Daily Life",
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Conflict of the Orders",
+      "type": "concept",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Constantine",
+      "type": "person",
+      "sections": [
+        "7. Religion and Belief",
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Constantine the Great",
+      "type": "person",
+      "sections": [
+        "9. Crisis, Reform, and Division"
+      ]
+    },
+    {
+      "label": "Constantinian dynasty",
+      "type": "institution",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Constantinople",
+      "type": "place",
+      "sections": [
+        "9. Crisis, Reform, and Division",
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Corpus Juris Civilis",
+      "type": "concept",
+      "sections": [
+        "3. Imperial Government and Administration"
+      ]
+    },
+    {
+      "label": "Crisis of the Third Century",
+      "type": "concept",
+      "sections": [
+        "9. Crisis, Reform, and Division"
+      ]
+    },
+    {
+      "label": "Danube",
+      "type": "place",
+      "sections": [
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Diocletian",
+      "type": "person",
+      "sections": [
+        "9. Crisis, Reform, and Division",
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Eastern Roman Empire",
+      "type": "institution",
+      "sections": [
+        "9. Crisis, Reform, and Division",
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Egypt",
+      "type": "place",
+      "sections": [
+        "5. Economy and Trade",
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Enlightenment",
+      "type": "concept",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Euphrates",
+      "type": "place",
+      "sections": [
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "First Triumvirate",
+      "type": "institution",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Five Good Emperors",
+      "type": "concept",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Flavian dynasty",
+      "type": "institution",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Franks",
+      "type": "concept",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "French",
+      "type": "concept",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Gaius",
+      "type": "person",
+      "sections": [
+        "3. Imperial Government and Administration"
+      ]
+    },
+    {
+      "label": "Gaius Marius",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Gaul",
+      "type": "place",
+      "sections": [
+        "2. From Republic to Empire",
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Goths",
+      "type": "concept",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Gracchi brothers",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Great Fire of Rome",
+      "type": "concept",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Hadrian",
+      "type": "person",
+      "sections": [
+        "8. Culture, Art, and Engineering",
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Hadrian's Wall",
+      "type": "place",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "Hannibal",
+      "type": "person",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Holy Roman Empire",
+      "type": "institution",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Horace",
+      "type": "person",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Huns",
+      "type": "concept",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "India",
+      "type": "place",
+      "sections": [
+        "5. Economy and Trade"
+      ]
+    },
+    {
+      "label": "Italian",
+      "type": "concept",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Italy",
+      "type": "place",
+      "sections": [
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Julian calendar",
+      "type": "concept",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Julio-Claudian dynasty",
+      "type": "institution",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Julius Caesar",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire",
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Juno",
+      "type": "concept",
+      "sections": [
+        "7. Religion and Belief"
+      ]
+    },
+    {
+      "label": "Jupiter",
+      "type": "concept",
+      "sections": [
+        "7. Religion and Belief"
+      ]
+    },
+    {
+      "label": "Justinian I",
+      "type": "person",
+      "sections": [
+        "3. Imperial Government and Administration",
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Latin",
+      "type": "concept",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Livia",
+      "type": "person",
+      "sections": [
+        "14. Women, Family, and Education"
+      ]
+    },
+    {
+      "label": "Livy",
+      "type": "person",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Marcus Aurelius",
+      "type": "person",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Marcus Licinius Crassus",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Mark Antony",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Mars",
+      "type": "concept",
+      "sections": [
+        "7. Religion and Belief"
+      ]
+    },
+    {
+      "label": "Mediterranean Sea",
+      "type": "place",
+      "sections": [
+        "4. The Roman Military",
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Minerva",
+      "type": "concept",
+      "sections": [
+        "7. Religion and Belief"
+      ]
+    },
+    {
+      "label": "Neptune",
+      "type": "concept",
+      "sections": [
+        "7. Religion and Belief"
+      ]
+    },
+    {
+      "label": "Nero",
+      "type": "person",
+      "sections": [
+        "12. Key Emperors and Dynasties",
+        "14. Women, Family, and Education"
+      ]
+    },
+    {
+      "label": "North Africa",
+      "type": "place",
+      "sections": [
+        "5. Economy and Trade",
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Numa Pompilius",
+      "type": "person",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Octavian",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Odoacer",
+      "type": "person",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Ottoman Turks",
+      "type": "concept",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Ovid",
+      "type": "person",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Pantheon",
+      "type": "place",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Papinian",
+      "type": "person",
+      "sections": [
+        "3. Imperial Government and Administration"
+      ]
+    },
+    {
+      "label": "Pax Romana",
+      "type": "concept",
+      "sections": [
+        "5. Economy and Trade",
+        "9. Crisis, Reform, and Division"
+      ]
+    },
+    {
+      "label": "Pliny the Elder",
+      "type": "person",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Pompey the Great",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Pont du Gard",
+      "type": "place",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Portuguese",
+      "type": "concept",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Praetorian Guard",
+      "type": "institution",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "Principate",
+      "type": "concept",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Punic Wars",
+      "type": "concept",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Remus",
+      "type": "person",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Renaissance",
+      "type": "concept",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Republic",
+      "type": "institution",
+      "sections": [
+        "1. Origins and the Roman Republic",
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Rhine",
+      "type": "place",
+      "sections": [
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Roman",
+      "type": "concept",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Roman Empire",
+      "type": "place",
+      "sections": [
+        "3. Imperial Government and Administration",
+        "5. Economy and Trade",
+        "11. Legacy of Rome",
+        "13. Geography, Provinces, and Urban Life",
+        "14. Women, Family, and Education"
+      ]
+    },
+    {
+      "label": "Roman army",
+      "type": "institution",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "Roman citizenship",
+      "type": "concept",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "Roman family",
+      "type": "institution",
+      "sections": [
+        "14. Women, Family, and Education"
+      ]
+    },
+    {
+      "label": "Roman law",
+      "type": "concept",
+      "sections": [
+        "3. Imperial Government and Administration"
+      ]
+    },
+    {
+      "label": "Roman navy",
+      "type": "institution",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "Roman women",
+      "type": "concept",
+      "sections": [
+        "14. Women, Family, and Education"
+      ]
+    },
+    {
+      "label": "Romanisation",
+      "type": "concept",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "Rome",
+      "type": "place",
+      "sections": [
+        "1. Origins and the Roman Republic",
+        "5. Economy and Trade",
+        "6. Society and Daily Life",
+        "10. Decline and Fall of the West",
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Romulus",
+      "type": "person",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Romulus Augustulus",
+      "type": "person",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Senate",
+      "type": "institution",
+      "sections": [
+        "1. Origins and the Roman Republic",
+        "2. From Republic to Empire",
+        "3. Imperial Government and Administration"
+      ]
+    },
+    {
+      "label": "Seneca",
+      "type": "person",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Severan dynasty",
+      "type": "institution",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Spain",
+      "type": "place",
+      "sections": [
+        "5. Economy and Trade",
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Spanish",
+      "type": "concept",
+      "sections": [
+        "11. Legacy of Rome"
+      ]
+    },
+    {
+      "label": "Sulla",
+      "type": "person",
+      "sections": [
+        "2. From Republic to Empire"
+      ]
+    },
+    {
+      "label": "Syria",
+      "type": "place",
+      "sections": [
+        "13. Geography, Provinces, and Urban Life"
+      ]
+    },
+    {
+      "label": "Tacitus",
+      "type": "person",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Tarquinius Superbus",
+      "type": "person",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Tarquins",
+      "type": "person",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Tetrarchy",
+      "type": "institution",
+      "sections": [
+        "9. Crisis, Reform, and Division"
+      ]
+    },
+    {
+      "label": "Theodosian dynasty",
+      "type": "institution",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Theodosius I",
+      "type": "person",
+      "sections": [
+        "7. Religion and Belief",
+        "9. Crisis, Reform, and Division"
+      ]
+    },
+    {
+      "label": "Tiberius",
+      "type": "person",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Trajan",
+      "type": "person",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Trajan's Column",
+      "type": "concept",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Twelve Tables",
+      "type": "concept",
+      "sections": [
+        "1. Origins and the Roman Republic"
+      ]
+    },
+    {
+      "label": "Ulpian",
+      "type": "person",
+      "sections": [
+        "3. Imperial Government and Administration"
+      ]
+    },
+    {
+      "label": "Valens",
+      "type": "person",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Vandals",
+      "type": "concept",
+      "sections": [
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Venus",
+      "type": "concept",
+      "sections": [
+        "7. Religion and Belief"
+      ]
+    },
+    {
+      "label": "Vespasian",
+      "type": "person",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "Vestal Virgins",
+      "type": "institution",
+      "sections": [
+        "7. Religion and Belief"
+      ]
+    },
+    {
+      "label": "Virgil",
+      "type": "person",
+      "sections": [
+        "8. Culture, Art, and Engineering"
+      ]
+    },
+    {
+      "label": "Western Roman Empire",
+      "type": "institution",
+      "sections": [
+        "9. Crisis, Reform, and Division",
+        "10. Decline and Fall of the West"
+      ]
+    },
+    {
+      "label": "Year of the Four Emperors",
+      "type": "concept",
+      "sections": [
+        "12. Key Emperors and Dynasties"
+      ]
+    },
+    {
+      "label": "annona",
+      "type": "institution",
+      "sections": [
+        "5. Economy and Trade"
+      ]
+    },
+    {
+      "label": "auxilia",
+      "type": "institution",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "centurion",
+      "type": "person",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "citizenship",
+      "type": "concept",
+      "sections": [
+        "6. Society and Daily Life"
+      ]
+    },
+    {
+      "label": "cohort",
+      "type": "institution",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "college of pontiffs",
+      "type": "institution",
+      "sections": [
+        "7. Religion and Belief"
+      ]
+    },
+    {
+      "label": "equestrian order",
+      "type": "concept",
+      "sections": [
+        "3. Imperial Government and Administration",
+        "6. Society and Daily Life"
+      ]
+    },
+    {
+      "label": "freedmen",
+      "type": "concept",
+      "sections": [
+        "6. Society and Daily Life"
+      ]
+    },
+    {
+      "label": "latifundia",
+      "type": "institution",
+      "sections": [
+        "5. Economy and Trade"
+      ]
+    },
+    {
+      "label": "legion",
+      "type": "institution",
+      "sections": [
+        "4. The Roman Military"
+      ]
+    },
+    {
+      "label": "paterfamilias",
+      "type": "concept",
+      "sections": [
+        "6. Society and Daily Life",
+        "14. Women, Family, and Education"
+      ]
+    },
+    {
+      "label": "patria potestas",
+      "type": "concept",
+      "sections": [
+        "6. Society and Daily Life"
+      ]
+    },
+    {
+      "label": "pietas",
+      "type": "concept",
+      "sections": [
+        "14. Women, Family, and Education"
+      ]
+    },
+    {
+      "label": "senatorial order",
+      "type": "institution",
+      "sections": [
+        "6. Society and Daily Life"
+      ]
+    },
+    {
+      "label": "slaves",
+      "type": "concept",
+      "sections": [
+        "6. Society and Daily Life"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "Romulus",
+      "relation": "founded",
+      "target": "Rome",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "source": "Remus",
+      "relation": "founded",
+      "target": "Rome",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "source": "Tarquinius Superbus",
+      "relation": "was expelled",
+      "target": "Republic",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "source": "Republic",
+      "relation": "established",
+      "target": "Senate",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "source": "Rome",
+      "relation": "conflicted with",
+      "target": "Carthage",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "source": "Rome",
+      "relation": "fought",
+      "target": "Punic Wars",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "source": "Rome",
+      "relation": "destroyed",
+      "target": "Carthage",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "source": "Gracchi brothers",
+      "relation": "attempted reforms",
+      "target": "Republic",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Gaius Marius",
+      "relation": "reformed legions",
+      "target": "Republic",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Sulla",
+      "relation": "ruled as dictator",
+      "target": "Republic",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Pompey the Great",
+      "relation": "formed",
+      "target": "First Triumvirate",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Marcus Licinius Crassus",
+      "relation": "formed",
+      "target": "First Triumvirate",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Julius Caesar",
+      "relation": "formed",
+      "target": "First Triumvirate",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Julius Caesar",
+      "relation": "conquered",
+      "target": "Gaul",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Julius Caesar",
+      "relation": "defied",
+      "target": "Senate",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Julius Caesar",
+      "relation": "defeated",
+      "target": "Pompey the Great",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Julius Caesar",
+      "relation": "appointed dictator",
+      "target": "Republic",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Octavian",
+      "relation": "defeated",
+      "target": "Mark Antony",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Octavian",
+      "relation": "defeated",
+      "target": "Cleopatra",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Octavian",
+      "relation": "won",
+      "target": "Battle of Actium",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Senate",
+      "relation": "granted title",
+      "target": "Octavian",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Octavian",
+      "relation": "became",
+      "target": "Augustus",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Augustus",
+      "relation": "founded",
+      "target": "Principate",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "source": "Gaius",
+      "relation": "developed",
+      "target": "Roman law",
+      "section": "3. Imperial Government and Administration"
+    },
+    {
+      "source": "Ulpian",
+      "relation": "developed",
+      "target": "Roman law",
+      "section": "3. Imperial Government and Administration"
+    },
+    {
+      "source": "Papinian",
+      "relation": "developed",
+      "target": "Roman law",
+      "section": "3. Imperial Government and Administration"
+    },
+    {
+      "source": "Justinian I",
+      "relation": "codified",
+      "target": "Corpus Juris Civilis",
+      "section": "3. Imperial Government and Administration"
+    },
+    {
+      "source": "legion",
+      "relation": "subdivided into",
+      "target": "cohort",
+      "section": "4. The Roman Military"
+    },
+    {
+      "source": "cohort",
+      "relation": "commanded by",
+      "target": "centurion",
+      "section": "4. The Roman Military"
+    },
+    {
+      "source": "auxilia",
+      "relation": "granted",
+      "target": "Roman citizenship",
+      "section": "4. The Roman Military"
+    },
+    {
+      "source": "Roman army",
+      "relation": "built",
+      "target": "Hadrian's Wall",
+      "section": "4. The Roman Military"
+    },
+    {
+      "source": "Roman navy",
+      "relation": "secured",
+      "target": "Mediterranean Sea",
+      "section": "4. The Roman Military"
+    },
+    {
+      "source": "Egypt",
+      "relation": "fed",
+      "target": "Rome",
+      "section": "5. Economy and Trade"
+    },
+    {
+      "source": "North Africa",
+      "relation": "fed",
+      "target": "Rome",
+      "section": "5. Economy and Trade"
+    },
+    {
+      "source": "paterfamilias",
+      "relation": "held authority",
+      "target": "patria potestas",
+      "section": "6. Society and Daily Life"
+    },
+    {
+      "source": "freedmen",
+      "relation": "could become",
+      "target": "citizenship",
+      "section": "6. Society and Daily Life"
+    },
+    {
+      "source": "Caracalla",
+      "relation": "issued",
+      "target": "Antonine Constitution",
+      "section": "6. Society and Daily Life"
+    },
+    {
+      "source": "Antonine Constitution",
+      "relation": "granted",
+      "target": "citizenship",
+      "section": "6. Society and Daily Life"
+    },
+    {
+      "source": "citizenship",
+      "relation": "spread from",
+      "target": "Rome",
+      "section": "6. Society and Daily Life"
+    },
+    {
+      "source": "Virgil",
+      "relation": "wrote",
+      "target": "Aeneid",
+      "section": "8. Culture, Art, and Engineering"
+    },
+    {
+      "source": "Pantheon",
+      "relation": "dome constructed under",
+      "target": "Hadrian",
+      "section": "8. Culture, Art, and Engineering"
+    },
+    {
+      "source": "Julian calendar",
+      "relation": "introduced by",
+      "target": "Julius Caesar",
+      "section": "8. Culture, Art, and Engineering"
+    },
+    {
+      "source": "Diocletian",
+      "relation": "restored stability",
+      "target": "Crisis of the Third Century",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "source": "Diocletian",
+      "relation": "established",
+      "target": "Tetrarchy",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "source": "Constantine the Great",
+      "relation": "reunified",
+      "target": "Western Roman Empire",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "source": "Constantine the Great",
+      "relation": "reunified",
+      "target": "Eastern Roman Empire",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "source": "Constantine the Great",
+      "relation": "founded",
+      "target": "Constantinople",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "source": "Theodosius I",
+      "relation": "divided empire",
+      "target": "Western Roman Empire",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "source": "Theodosius I",
+      "relation": "divided empire",
+      "target": "Eastern Roman Empire",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "source": "Western Roman Empire",
+      "relation": "faced pressures from",
+      "target": "Goths",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Western Roman Empire",
+      "relation": "faced pressures from",
+      "target": "Vandals",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Western Roman Empire",
+      "relation": "faced pressures from",
+      "target": "Franks",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Western Roman Empire",
+      "relation": "faced pressures from",
+      "target": "Huns",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Valens",
+      "relation": "killed at",
+      "target": "Battle of Adrianople",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Goths",
+      "relation": "defeated",
+      "target": "Valens",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Vandals",
+      "relation": "sacked",
+      "target": "Rome",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Odoacer",
+      "relation": "deposed",
+      "target": "Romulus Augustulus",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Eastern Roman Empire",
+      "relation": "survived as",
+      "target": "Byzantine Empire",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Byzantine Empire",
+      "relation": "reached high point under",
+      "target": "Justinian I",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Byzantine Empire",
+      "relation": "fell to",
+      "target": "Ottoman Turks",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "source": "Latin",
+      "relation": "evolved into",
+      "target": "Italian",
+      "section": "11. Legacy of Rome"
+    },
+    {
+      "source": "Latin",
+      "relation": "evolved into",
+      "target": "French",
+      "section": "11. Legacy of Rome"
+    },
+    {
+      "source": "Latin",
+      "relation": "evolved into",
+      "target": "Spanish",
+      "section": "11. Legacy of Rome"
+    },
+    {
+      "source": "Latin",
+      "relation": "evolved into",
+      "target": "Portuguese",
+      "section": "11. Legacy of Rome"
+    },
+    {
+      "source": "Roman",
+      "relation": "inspired",
+      "target": "Holy Roman Empire",
+      "section": "11. Legacy of Rome"
+    },
+    {
+      "source": "Christian Church",
+      "relation": "adopted structures",
+      "target": "Roman Empire",
+      "section": "11. Legacy of Rome"
+    },
+    {
+      "source": "Roman",
+      "relation": "shaped",
+      "target": "Renaissance",
+      "section": "11. Legacy of Rome"
+    },
+    {
+      "source": "Roman",
+      "relation": "shaped",
+      "target": "Enlightenment",
+      "section": "11. Legacy of Rome"
+    },
+    {
+      "source": "Augustus",
+      "relation": "founded",
+      "target": "Julio-Claudian dynasty",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "source": "Nero",
+      "relation": "blamed for",
+      "target": "Great Fire of Rome",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "source": "Vespasian",
+      "relation": "founded",
+      "target": "Flavian dynasty",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "source": "Trajan",
+      "relation": "reigned during",
+      "target": "Five Good Emperors",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "source": "Hadrian",
+      "relation": "consolidated frontiers",
+      "target": "Roman Empire",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "source": "Diocletian",
+      "relation": "reshaped",
+      "target": "Roman Empire",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "source": "Constantine",
+      "relation": "reshaped",
+      "target": "Roman Empire",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "encircled",
+      "target": "Mediterranean Sea",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "stretched to",
+      "target": "Spain",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "stretched to",
+      "target": "Britain",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "stretched to",
+      "target": "Egypt",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "stretched to",
+      "target": "Euphrates",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "included provinces in",
+      "target": "North Africa",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "had frontiers along",
+      "target": "Rhine",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "had frontiers along",
+      "target": "Danube",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "included lands of",
+      "target": "Italy",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "included lands of",
+      "target": "Gaul",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "included lands of",
+      "target": "Spain",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Roman Empire",
+      "relation": "linked to",
+      "target": "Rome",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "source": "Livia",
+      "relation": "wife of",
+      "target": "Augustus",
+      "section": "14. Women, Family, and Education"
+    },
+    {
+      "source": "Agrippina the Younger",
+      "relation": "mother of",
+      "target": "Nero",
+      "section": "14. Women, Family, and Education"
+    },
+    {
+      "source": "paterfamilias",
+      "relation": "held authority",
+      "target": "Roman family",
+      "section": "14. Women, Family, and Education"
+    }
+  ],
+  "events": [
+    {
+      "year": 753,
+      "era": "BCE",
+      "label": "Founding of Rome",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "year": 509,
+      "era": "BCE",
+      "label": "Romans expelled their last king and established the Republic",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "year": 451,
+      "era": "BCE",
+      "label": "Publication of the Twelve Tables",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "year": 264,
+      "era": "BCE",
+      "label": "Start of the Punic Wars",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "year": 202,
+      "era": "BCE",
+      "label": "Victory over Hannibal at Zama",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "year": 146,
+      "era": "BCE",
+      "label": "Destruction of Carthage",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "year": 146,
+      "era": "BCE",
+      "label": "End of the Punic Wars",
+      "section": "1. Origins and the Roman Republic"
+    },
+    {
+      "year": 58,
+      "era": "BCE",
+      "label": "Caesar's conquest of Gaul begins",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "year": 50,
+      "era": "BCE",
+      "label": "Caesar's conquest of Gaul ends",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "year": 49,
+      "era": "BCE",
+      "label": "Caesar crossed the Rubicon river",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "year": 46,
+      "era": "BCE",
+      "label": "Julian calendar introduced by Julius Caesar",
+      "section": "8. Culture, Art, and Engineering"
+    },
+    {
+      "year": 44,
+      "era": "BCE",
+      "label": "Julius Caesar assassinated",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "year": 31,
+      "era": "BCE",
+      "label": "Battle of Actium",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "year": 27,
+      "era": "BCE",
+      "label": "Octavian granted title Augustus",
+      "section": "2. From Republic to Empire"
+    },
+    {
+      "year": 27,
+      "era": "BCE",
+      "label": "Start of Pax Romana",
+      "section": "5. Economy and Trade"
+    },
+    {
+      "year": 27,
+      "era": "BCE",
+      "label": "Augustus began reign",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "year": 14,
+      "era": "CE",
+      "label": "Augustus ended reign",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "year": 64,
+      "era": "CE",
+      "label": "Great Fire of Rome",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "year": 68,
+      "era": "CE",
+      "label": "Nero's suicide",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "year": 69,
+      "era": "CE",
+      "label": "Year of the Four Emperors",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "year": 98,
+      "era": "CE",
+      "label": "Trajan began reign",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "year": 100,
+      "era": "CE",
+      "label": "Roman Empire at its height",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "year": 117,
+      "era": "CE",
+      "label": "Trajan ended reign",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "year": 180,
+      "era": "CE",
+      "label": "End of Pax Romana",
+      "section": "5. Economy and Trade"
+    },
+    {
+      "year": 193,
+      "era": "CE",
+      "label": "Severan dynasty began",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "year": 200,
+      "era": "CE",
+      "label": "Roman Empire at its height",
+      "section": "13. Geography, Provinces, and Urban Life"
+    },
+    {
+      "year": 212,
+      "era": "CE",
+      "label": "Caracalla granted citizenship via Antonine Constitution",
+      "section": "6. Society and Daily Life"
+    },
+    {
+      "year": 235,
+      "era": "CE",
+      "label": "Start of the Crisis of the Third Century",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "year": 235,
+      "era": "CE",
+      "label": "Severan dynasty ended",
+      "section": "12. Key Emperors and Dynasties"
+    },
+    {
+      "year": 284,
+      "era": "CE",
+      "label": "End of the Crisis of the Third Century",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "year": 284,
+      "era": "CE",
+      "label": "Diocletian began reign",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "year": 300,
+      "era": "CE",
+      "label": "Third century CE debasement of coinage",
+      "section": "5. Economy and Trade"
+    },
+    {
+      "year": 305,
+      "era": "CE",
+      "label": "Diocletian ended reign",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "year": 306,
+      "era": "CE",
+      "label": "Constantine the Great began reign",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "year": 313,
+      "era": "CE",
+      "label": "Edict of Milan granted religious toleration",
+      "section": "7. Religion and Belief"
+    },
+    {
+      "year": 330,
+      "era": "CE",
+      "label": "Constantine founded Constantinople",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "year": 337,
+      "era": "CE",
+      "label": "Constantine the Great ended reign",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "year": 378,
+      "era": "CE",
+      "label": "Battle of Adrianople, Valens killed",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "year": 380,
+      "era": "CE",
+      "label": "Theodosius I made Nicene Christianity official religion",
+      "section": "7. Religion and Belief"
+    },
+    {
+      "year": 395,
+      "era": "CE",
+      "label": "Empire permanently divided after Theodosius I's death",
+      "section": "9. Crisis, Reform, and Division"
+    },
+    {
+      "year": 410,
+      "era": "CE",
+      "label": "Rome sacked by Visigoths",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "year": 455,
+      "era": "CE",
+      "label": "Rome sacked by Vandals",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "year": 476,
+      "era": "CE",
+      "label": "Western Roman Empire fell",
+      "section": "10. Decline and Fall of the West"
+    },
+    {
+      "year": 529,
+      "era": "CE",
+      "label": "Justinian I codified Roman law",
+      "section": "3. Imperial Government and Administration"
+    },
+    {
+      "year": 534,
+      "era": "CE",
+      "label": "Justinian I codified Roman law",
+      "section": "3. Imperial Government and Administration"
+    },
+    {
+      "year": 1453,
+      "era": "CE",
+      "label": "Constantinople captured by Ottoman Turks",
+      "section": "10. Decline and Fall of the West"
+    }
+  ]
+}
