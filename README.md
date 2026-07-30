@@ -5,7 +5,7 @@
 > | Who | Area |
 > |---|---|
 > | **Konstantin Shevtsov** ([@shev-k](https://github.com/shev-k)) and **Davyd Zakharov** | Knowledge base — source document, extraction, cleaning and chunking; prompt engineering and LLM integration; Streamlit UI, CLI and evaluation harness |
-> | **Ruslan Sabitov** ([@resonance777](https://github.com/resonance777)) | Search engine — MiniLM embeddings, FAISS index, top-k similarity retrieval (core of `rag_pipeline.py`); presented the system architecture at the defence |
+> | **Ruslan Sabitov** ([@resonance777](https://github.com/resonance777)) | Retrieval service — MiniLM embeddings, FAISS index build/persistence/caching, top-k similarity search (core of `rag_pipeline.py`); presented the system architecture at the defence |
 >
 > Git history in this repository preserves each author's original commits.
 
